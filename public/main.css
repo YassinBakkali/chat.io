@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    height: 100vh;
+    max-height: 100vh;
+}
+
+.title {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.container-chat {
+    width: 800px;
+    height: 80%;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #313338;
+    border-radius: 7px;
+}
+
+.output {
+    height: 90%;
+    width: 95%;
+    margin: auto;
+}
+
+.text {
+    width: 85%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    background-color: #383a40;
+    color: white;
+}
+
+#send {
+    height: 45px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #383a40;
+    color: #757564;
+}
+
+.messageOutput {
+    margin-left: 15px;
+    opacity: 0.8;
+}
+
+.messageBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.output {
+    padding-top: 20px;
+}
+
+.messageUser{
+    margin: 10px;
+}
