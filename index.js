@@ -28,7 +28,14 @@ io.on('connection', (socket) => {
     console.log('New Connection: ', socket.id);
 
     socket.on('chat:message', (data) => {
+        data = userHandle(data);
         console.log(data);
         io.sockets.emit('server:message', data);
     })
 })
+
+function userHandle (data) {
+    data.username = data.username == '' ? 'unknown' : data.username
+    
+    return data;
+}

@@ -8,28 +8,22 @@
 body {
     background-color: rgb(36, 36, 36);
     color: white;
-    height: 100vh;
-    max-height: 100vh;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
 }
 
 .title {
     text-align: center;
-    padding-top: 20px;
+
 }
 
 .container-chat {
     width: 800px;
-    height: 80%;
-    margin: auto;
-    margin-top: 20px;
+    height: 800px;
     background-color: #313338;
     border-radius: 7px;
-}
-
-.output {
-    height: 90%;
-    width: 95%;
-    margin: auto;
 }
 
 .text {
@@ -66,9 +60,50 @@ body {
 }
 
 .output {
+    height: 700px;
+    width: 95%;
+    margin: auto;
     padding-top: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .messageUser{
     margin: 10px;
 }
+
+.output{
+    overflow-y: auto;
+}
+
+.output::-webkit-scrollbar{
+    width: 10px;
+    background: transparent; 
+}
+
+.output::-webkit-scrollbar-thumb {
+    background-color: #2b2d31;
+    border-radius: 5px;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.user-nick {
+    width: 295px;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    background: #383a40;
+    color: white;
+}
+
+.user-span {
+    margin-bottom: 16px;
+    font-weight: bold;
+    color: rgb(226, 230, 250);
+}
+
